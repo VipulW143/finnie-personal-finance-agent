@@ -132,9 +132,11 @@ docs/            setup, design, API/usage, evidence, submission checks
 
 ## Demo video
 
-The demo has been recorded locally: **9 minutes 9 seconds**, within the required 5–10 minutes. Its evaluator-accessible video URL will be added here after hosting is arranged.
+[**Download the Finnie demo recording**](https://github.com/VipulW143/finnie-personal-finance-agent/releases/download/demo-video/finnie-personal-finance-agent.mov) — MOV, approximately **9 minutes 9 seconds**, 331 MB (316 MiB).
 
-The required submission sequence is GitHub repository → record/upload demo → add its README link and push → download the final repository ZIP from GitHub → submit the form. The existing local ZIP is a verified checkpoint, not yet that GitHub download. See [GitHub and submission checklist](docs/github-submission.md).
+The recording is publicly available on the [demo release page](https://github.com/VipulW143/finnie-personal-finance-agent/releases/tag/demo-video). It is a separate release asset; the source-code ZIP contains this link, not the video file.
+
+The source and demo link are published. Download the current repository using **Code → Download ZIP**, then submit that GitHub-generated ZIP through the course form. If the form requests a separate video URL/file, use the release recording above. Earlier locally built ZIPs are development checkpoints. See [GitHub and submission checklist](docs/github-submission.md).
 
 ## Documentation and submission
 
@@ -155,4 +157,4 @@ python scripts/build_submission.py
 
 This writes `dist/finnie-submission.zip`, its SHA-256 checksum, and a per-file manifest inside the ZIP. An explicit allowlist excludes `.env`, `.venv`, caches, generated reports, build metadata, and course reference documents. Files are not published or uploaded. See the verification document for clean-install evidence and package limitations.
 
-Current planning estimate: approximately **96% complete**, subject to the verification record. This is not a grade. Core implementation and automated checks are in place; final manual acceptance, video hosting/link publication, and the final GitHub archive remain. Docker and MCP are optional and are not implemented.
+Submission preparation includes the public source repository, demo recording/link, setup/design documentation, samples and evaluation evidence. The final course-form submission is performed by the learner. Automated checks and small development evaluations do not guarantee a grade or universal answer accuracy. Docker and MCP are optional and are not implemented.
