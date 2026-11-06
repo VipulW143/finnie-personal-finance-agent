@@ -7,11 +7,12 @@ import re
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-ROOT_FILES = ("README.md", "pyproject.toml", "requirements.txt", "requirements-lock.txt", ".env.example", ".gitignore", "AGENTS.md")
+ROOT_FILES = ("README.md", "pyproject.toml", "requirements.txt", "requirements-lock.txt", ".env.example", ".gitignore")
 FOLDERS = {"src/finnie": {".py"}, "tests": {".py"}, "scripts": {".py"},
            "articles": {".md", ".json"}, "samples": {".csv", ".json"},
            "evaluation": {".json", ".md"}, "docs": {".md"}}
 ARCHIVE_ROOT = "finnie-submission"
+LOCAL_ONLY_FILES = {"AGENTS.md", "docs/demo-video.md"}
 
 
 def collect_files(root: Path) -> list[Path]:
@@ -25,6 +26,8 @@ def collect_files(root: Path) -> list[Path]:
     for folder, suffixes in FOLDERS.items():
         for path in (root/folder).rglob('*'):
             relative = path.relative_to(root)
+            if relative.as_posix() in LOCAL_ONLY_FILES:
+                continue
             if any(part.startswith('.') or part == '__pycache__' for part in relative.parts):
                 continue
             if path.is_symlink():

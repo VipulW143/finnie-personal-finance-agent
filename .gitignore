@@ -24,3 +24,8 @@ reports/
 dist/
 build/
 *.egg-info/
+
+# Local learning instructions and original recording
+/AGENTS.md
+/docs/demo-video.md
+/demo-video/

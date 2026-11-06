@@ -7,7 +7,7 @@ The supplied submission instruction requires pushing the project to GitHub and d
 1. GitHub repository containing source, source summaries/catalog/glossary, configuration templates, tests, evaluation files, samples, README and design/setup/interface documentation. Public is the learner's selected option. Private requires evaluator access.
 2. README with architecture overview/diagram, setup/run commands, environment list, test commands, sample usage, and final demo video link.
 3. .env.example with comments for every setting; no actual .env or secret values.
-4. A 5–10 minute Finnie demo showing multi-turn agents, portfolio analysis, actual market data, goal planning, and the implementation's sources/limits. docs/demo-video.md provides exact steps/questions and a target 8–9 minute timeline.
+4. A 5–10 minute Finnie demo showing multi-turn agents, portfolio analysis, actual market data, goal planning, and the implementation's sources/limits. The personal recording guide is retained locally and is not part of this repository.
 5. Final repository ZIP downloaded from GitHub for the form. Supply repository/video URLs in form fields when provided; the README also makes them discoverable from the ZIP. If a separate video-file upload is required by the form, attach the recording there as well.
 
 Docker is optional; do not delay the required repository/video for it. The local prototype has no Docker or MCP deliverable claimed.
@@ -28,4 +28,4 @@ Official references: [create a repository](https://docs.github.com/en/repositori
 
 ## Current status
 
-Local implementation/package checks passed: 97 tests and 96.53% combined coverage, installation in a disposable Python 3.14.5 environment, and CLI/headless Streamlit startup. The public GitHub repository is https://github.com/VipulW143/finnie-personal-finance-agent. Video recording/upload, the actual README video URL, and the final GitHub-downloaded ZIP remain pending. New recording/submission guide files were added after the verified local ZIP checkpoint; that older local ZIP is not the final submission archive.
+Local implementation/package checks passed: 97 tests and 96.53% combined coverage, installation in a disposable Python 3.14.5 environment, and CLI/headless Streamlit startup. The public GitHub repository is https://github.com/VipulW143/finnie-personal-finance-agent. The 9-minute-9-second recording exists locally. Video hosting, the actual README video URL, and the final GitHub-downloaded ZIP remain pending. New recording/submission guide files were added after the verified local ZIP checkpoint; that older local ZIP is not the final submission archive.

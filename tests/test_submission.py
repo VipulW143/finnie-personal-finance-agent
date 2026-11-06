@@ -26,14 +26,14 @@ class SubmissionTests(unittest.TestCase):
         with TemporaryDirectory() as directory:
             root=Path(directory)
             self.fixture(root)
-            for path in ('.env','.venv/secret.txt','.finnie/index.json','reports/private.json','src/finnie/__pycache__/app.pyc','reference.docx'):
+            for path in ('.env','AGENTS.md','docs/demo-video.md','.venv/secret.txt','.finnie/index.json','reports/private.json','src/finnie/__pycache__/app.pyc','reference.docx'):
                 target=root/path
                 target.parent.mkdir(exist_ok=True,parents=True)
                 target.write_text('dummy local state')
             output=build_submission(root)
             with ZipFile(output) as archive:
                 names=archive.namelist()
-                for bad in ('.env','.venv/secret.txt','.finnie/index.json','reports/private.json','reference.docx'):
+                for bad in ('.env','AGENTS.md','docs/demo-video.md','.venv/secret.txt','.finnie/index.json','reports/private.json','reference.docx'):
                     self.assertNotIn('finnie-submission/'+bad,names)
                 manifest=json.loads(archive.read('finnie-submission/MANIFEST.json'))
                 self.assertEqual(len(names),len(manifest['files'])+1)

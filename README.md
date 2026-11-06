@@ -132,7 +132,7 @@ docs/            setup, design, API/usage, evidence, submission checks
 
 ## Demo video
 
-Required recording: **5–10 minutes; pending recording/upload**. The actual video URL will be added here after upload. See the [8–9 minute recording guide with exact questions](docs/demo-video.md).
+The demo has been recorded locally: **9 minutes 9 seconds**, within the required 5–10 minutes. Its evaluator-accessible video URL will be added here after hosting is arranged.
 
 The required submission sequence is GitHub repository → record/upload demo → add its README link and push → download the final repository ZIP from GitHub → submit the form. The existing local ZIP is a verified checkpoint, not yet that GitHub download. See [GitHub and submission checklist](docs/github-submission.md).
 
@@ -155,4 +155,4 @@ python scripts/build_submission.py
 
 This writes `dist/finnie-submission.zip`, its SHA-256 checksum, and a per-file manifest inside the ZIP. An explicit allowlist excludes `.env`, `.venv`, caches, generated reports, build metadata, and course reference documents. Files are not published or uploaded. See the verification document for clean-install evidence and package limitations.
 
-Current planning estimate: approximately **96% complete**, subject to the verification record. This is not a grade. Core implementation and automated checks are in place; final manual acceptance and the required 5–10 minute demo video remain. Docker and MCP are optional and are not implemented.
+Current planning estimate: approximately **96% complete**, subject to the verification record. This is not a grade. Core implementation and automated checks are in place; final manual acceptance, video hosting/link publication, and the final GitHub archive remain. Docker and MCP are optional and are not implemented.
