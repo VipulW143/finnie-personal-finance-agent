@@ -1,0 +1,7 @@
+{
+  "target_amount": 20000,
+  "current_savings": 5000,
+  "years": 5,
+  "annual_return": 0.05,
+  "risk_tolerance": "low"
+}

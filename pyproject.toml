@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finnie-personal-finance-agent"
+version = "0.1.0"
+description = "Educational multi-agent personal-finance capstone"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv>=1.2,<2",
+    "openai>=1.0.0,<2.0.0",
+    "langgraph>=1.0,<2.0",
+    "streamlit>=1.40,<2.0",
+    "faiss-cpu>=1.13,<2",
+    "numpy>=2.1,<3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]        # Directories to look for packages (defaults to ".")
+
+[project.optional-dependencies]
+dev = ["coverage>=7.10,<8"]
+
+[tool.coverage.run]
+branch = true
+source = ["src/finnie"]
+relative_files = true
+
+[tool.coverage.report]
+show_missing = true
+precision = 2
+fail_under = 80

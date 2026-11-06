@@ -1,0 +1,26 @@
+# Python virtual environment
+.venv/
+
+# Environment variables / secrets
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Locally cached source chunks and embeddings
+.finnie/
+
+# Generated test-coverage artifacts
+.coverage
+.coverage.*
+htmlcov/
+reports/
+
+# Local build/install artifacts
+dist/
+build/
+*.egg-info/

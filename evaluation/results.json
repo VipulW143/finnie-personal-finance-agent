@@ -1,0 +1,696 @@
+{
+  "client_review_date": "2026-11-05",
+  "created_at_utc": "2026-11-06T03:57:20.453758+00:00",
+  "dataset_description": "Small curated development set; not held out and not comprehensive. Gold source files are educator-selected relevant documents, not model-generated labels.",
+  "environment": {
+    "python": "3.14.5",
+    "platform": "macOS-15.1.1-arm64-arm-64bit-Mach-O"
+  },
+  "models": {
+    "environment": "learning",
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "embedding_model": "text-embedding-3-small"
+  },
+  "corpus": {
+    "sources": 50,
+    "chunks": 59,
+    "dimensions": 1536
+  },
+  "coverage": {
+    "covered_lines": 1349,
+    "num_statements": 1382,
+    "percent_covered": 96.60041841004184,
+    "percent_covered_display": "96.60",
+    "missing_lines": 33,
+    "excluded_lines": 0,
+    "percent_statements_covered": 97.61215629522431,
+    "percent_statements_covered_display": "97.61",
+    "num_branches": 530,
+    "num_partial_branches": 32,
+    "covered_branches": 498,
+    "missing_branches": 32,
+    "percent_branches_covered": 93.9622641509434,
+    "percent_branches_covered_display": "93.96"
+  },
+  "tests_passed": 89,
+  "local_benchmarks": {
+    "portfolio_2_rows": {
+      "iterations": 100,
+      "p50_ms": 0.003979483153671026,
+      "p95_ms": 0.004292000085115433,
+      "min_ms": 0.0038329744711518288
+    },
+    "goal_61_monthly_rows": {
+      "iterations": 100,
+      "p50_ms": 0.0226249685510993,
+      "p95_ms": 0.024499953724443913,
+      "min_ms": 0.022290972992777824
+    },
+    "faiss_top3_precomputed_vector": {
+      "iterations": 100,
+      "p50_ms": 0.04729145439341664,
+      "p95_ms": 0.08462497498840094,
+      "min_ms": 0.04449998959898949
+    },
+    "saved_index_load_and_fingerprint": {
+      "iterations": 20,
+      "p50_ms": 59.539792011491954,
+      "p95_ms": 63.16629203502089,
+      "min_ms": 57.582166977226734
+    }
+  },
+  "live_results": {
+    "query_embedding_batch_ms": 703.6672080866992,
+    "retrieval": [
+      {
+        "id": "compound",
+        "question": "How does 100 earning 5% annual compound interest become 110.25 after two years?",
+        "category": null,
+        "relevant_files": [
+          "compound_interest_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.09041698649525642,
+        "matches": [
+          {
+            "title": "What is compound interest?",
+            "url": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+            "score": 0.6493470668792725
+          },
+          {
+            "title": "How Credit Card Interest Is Calculated",
+            "url": "https://www.consumerfinance.gov/ask-cfpb/how-does-my-credit-card-company-calculate-the-amount-of-interest-i-owe-en-51/",
+            "score": 0.3771314024925232
+          },
+          {
+            "title": "Series I Savings Bonds",
+            "url": "https://www.treasurydirect.gov/savings-bonds/i-bonds/",
+            "score": 0.34563881158828735
+          }
+        ]
+      },
+      {
+        "id": "funds",
+        "question": "How are ETFs and mutual funds traded and priced differently?",
+        "category": null,
+        "relevant_files": [
+          "funds_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.062417006120085716,
+        "matches": [
+          {
+            "title": "Characteristics of Mutual Funds and Exchange-Traded Funds (ETFs)",
+            "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/characteristics-mutual-funds-exchange-traded-funds",
+            "score": 0.7169157266616821
+          },
+          {
+            "title": "Characteristics of Mutual Funds and Exchange-Traded Funds (ETFs)",
+            "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/characteristics-mutual-funds-exchange-traded-funds",
+            "score": 0.6811611652374268
+          },
+          {
+            "title": "Characteristics of Mutual Funds and Exchange-Traded Funds (ETFs)",
+            "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/characteristics-mutual-funds-exchange-traded-funds",
+            "score": 0.6625823974609375
+          }
+        ]
+      },
+      {
+        "id": "emergency",
+        "question": "What is an emergency fund and how can I begin building one?",
+        "category": "Saving",
+        "relevant_files": [
+          "emergency_fund_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.048791058361530304,
+        "matches": [
+          {
+            "title": "An essential guide to building an emergency fund",
+            "url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+            "score": 0.7129383087158203
+          },
+          {
+            "title": "Understanding Deposit Insurance",
+            "url": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance",
+            "score": 0.2903296649456024
+          },
+          {
+            "title": "Certificates of Deposit (CDs)",
+            "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/certificates-deposit-cds",
+            "score": 0.24012485146522522
+          }
+        ]
+      },
+      {
+        "id": "grace",
+        "question": "What happens to a credit card purchase grace period if I carry a balance?",
+        "category": "Credit",
+        "relevant_files": [
+          "credit_grace_period_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.046166940592229366,
+        "matches": [
+          {
+            "title": "Credit Card Grace Periods",
+            "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-grace-period-for-a-credit-card-en-47/",
+            "score": 0.7653275728225708
+          },
+          {
+            "title": "How Credit Card Interest Is Calculated",
+            "url": "https://www.consumerfinance.gov/ask-cfpb/how-does-my-credit-card-company-calculate-the-amount-of-interest-i-owe-en-51/",
+            "score": 0.5241637229919434
+          },
+          {
+            "title": "Credit Card Interest Rates and APR",
+            "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-card-interest-rate-what-does-apr-mean-en-44/",
+            "score": 0.4026724696159363
+          }
+        ]
+      },
+      {
+        "id": "tips",
+        "question": "How does inflation change the principal and interest payments of TIPS?",
+        "category": null,
+        "relevant_files": [
+          "tips_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.07375003769993782,
+        "matches": [
+          {
+            "title": "Treasury Inflation-Protected Securities (TIPS)",
+            "url": "https://www.treasurydirect.gov/marketable-securities/tips/",
+            "score": 0.684829831123352
+          },
+          {
+            "title": "Series I Savings Bonds",
+            "url": "https://www.treasurydirect.gov/savings-bonds/i-bonds/",
+            "score": 0.39532047510147095
+          },
+          {
+            "title": "What is compound interest?",
+            "url": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+            "score": 0.3622831106185913
+          }
+        ]
+      },
+      {
+        "id": "margin",
+        "question": "Can my broker sell securities in my margin account without consulting me?",
+        "category": null,
+        "relevant_files": [
+          "brokerage_accounts_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.06595894228667021,
+        "matches": [
+          {
+            "title": "Types of Brokerage Accounts",
+            "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-brokerage-accounts",
+            "score": 0.4514228105545044
+          },
+          {
+            "title": "Executing an Order",
+            "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/executing-order",
+            "score": 0.3089370131492615
+          },
+          {
+            "title": "Five Questions to Ask Before You Invest",
+            "url": "https://www.investor.gov/introduction-investing/getting-started/five-questions-ask-you-invest",
+            "score": 0.30826953053474426
+          }
+        ]
+      },
+      {
+        "id": "fees",
+        "question": "What does an expense ratio mean for mutual fund operating costs?",
+        "category": null,
+        "relevant_files": [
+          "fund_fees_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.06508303340524435,
+        "matches": [
+          {
+            "title": "Mutual Fund and ETF Fees and Expenses",
+            "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/mutual-fund-fees-and-expenses",
+            "score": 0.6390291452407837
+          },
+          {
+            "title": "Characteristics of Mutual Funds and Exchange-Traded Funds (ETFs)",
+            "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/characteristics-mutual-funds-exchange-traded-funds",
+            "score": 0.41695436835289
+          },
+          {
+            "title": "Understanding Fees",
+            "url": "https://www.investor.gov/introduction-investing/getting-started/understanding-fees",
+            "score": 0.39960187673568726
+          }
+        ]
+      },
+      {
+        "id": "ira",
+        "question": "Compare the tax treatment of traditional IRA and Roth IRA contributions and withdrawals.",
+        "category": "Tax education",
+        "relevant_files": [
+          "tax_traditional_ira_source.md",
+          "tax_roth_ira_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.04912505391985178,
+        "matches": [
+          {
+            "title": "IRS Roth IRAs",
+            "url": "https://www.irs.gov/retirement-plans/roth-iras",
+            "score": 0.6787207722663879
+          },
+          {
+            "title": "IRS Traditional IRAs",
+            "url": "https://www.irs.gov/retirement-plans/traditional-iras",
+            "score": 0.6589876413345337
+          },
+          {
+            "title": "IRS 401(k) plans",
+            "url": "https://www.irs.gov/retirement-plans/401k-plans",
+            "score": 0.5485694408416748
+          }
+        ]
+      },
+      {
+        "id": "wages",
+        "question": "Are traditional 401(k) contributions excluded from W-2 federal taxable wages but subject to Social Security and Medicare taxes?",
+        "category": "Tax education",
+        "relevant_files": [
+          "tax_401k_wages_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.04479195922613144,
+        "matches": [
+          {
+            "title": "IRS Topic 424: 401(k) plans",
+            "url": "https://www.irs.gov/taxtopics/tc424",
+            "score": 0.7679601907730103
+          },
+          {
+            "title": "IRS 401(k) plans",
+            "url": "https://www.irs.gov/retirement-plans/401k-plans",
+            "score": 0.6375870704650879
+          },
+          {
+            "title": "IRS Traditional IRAs",
+            "url": "https://www.irs.gov/retirement-plans/traditional-iras",
+            "score": 0.5127976536750793
+          }
+        ]
+      },
+      {
+        "id": "allocation",
+        "question": "What is asset allocation and why does a portfolio need rebalancing when its mix changes?",
+        "category": null,
+        "relevant_files": [
+          "asset_allocation_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.06945803761482239,
+        "matches": [
+          {
+            "title": "Asset Allocation",
+            "url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation",
+            "score": 0.7214034199714661
+          },
+          {
+            "title": "Introduction to Investing",
+            "url": "https://www.investor.gov/introduction-investing",
+            "score": 0.523491382598877
+          },
+          {
+            "title": "Diversify Your Investments",
+            "url": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/diversify-your-investments",
+            "score": 0.4352797865867615
+          }
+        ]
+      },
+      {
+        "id": "cd",
+        "question": "What should I check about interest rates and early withdrawal penalties on a certificate of deposit?",
+        "category": "Saving",
+        "relevant_files": [
+          "certificates_deposit_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.0475830165669322,
+        "matches": [
+          {
+            "title": "Certificates of Deposit (CDs)",
+            "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/certificates-deposit-cds",
+            "score": 0.56817227602005
+          },
+          {
+            "title": "Understanding Deposit Insurance",
+            "url": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance",
+            "score": 0.39320117235183716
+          },
+          {
+            "title": "Series I Savings Bonds",
+            "url": "https://www.treasurydirect.gov/savings-bonds/i-bonds/",
+            "score": 0.3586200177669525
+          }
+        ]
+      },
+      {
+        "id": "insurance",
+        "question": "Does FDIC deposit insurance apply separately to every account at the same bank?",
+        "category": "Saving",
+        "relevant_files": [
+          "deposit_insurance_source.md"
+        ],
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "top_1_relevant": true,
+        "local_search_ms": 0.04495796747505665,
+        "matches": [
+          {
+            "title": "Understanding Deposit Insurance",
+            "url": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance",
+            "score": 0.6355700492858887
+          },
+          {
+            "title": "Certificates of Deposit (CDs)",
+            "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/certificates-deposit-cds",
+            "score": 0.3537079095840454
+          },
+          {
+            "title": "Series I Savings Bonds",
+            "url": "https://www.treasurydirect.gov/savings-bonds/i-bonds/",
+            "score": 0.24897727370262146
+          }
+        ]
+      }
+    ],
+    "routing": [
+      {
+        "id": "finance",
+        "question": "Explain compound interest in investing.",
+        "expected": "finance_qa",
+        "actual": {
+          "intent": "finance_qa",
+          "question": "Explain compound interest in investing."
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 1363.3247080724686
+      },
+      {
+        "id": "tax",
+        "question": "Explain traditional IRA vs Roth IRA.",
+        "expected": "tax_education",
+        "actual": {
+          "intent": "tax_education",
+          "question": "Explain traditional IRA vs Roth IRA.",
+          "tax_question": "Explain traditional IRA vs Roth IRA."
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 948.2588330283761
+      },
+      {
+        "id": "news",
+        "question": "Find recent United States mutual fund news.",
+        "expected": "news_synthesis",
+        "actual": {
+          "intent": "news_synthesis",
+          "question": "Find recent news about mutual funds in the United States.",
+          "news_query": "Find recent news about mutual funds in the United States."
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 1292.1158330282196
+      },
+      {
+        "id": "market",
+        "question": "Get the latest trade for AAPL.",
+        "expected": "market_analysis",
+        "actual": {
+          "intent": "market_analysis",
+          "question": "Get the latest trade for AAPL.",
+          "market_symbol": "AAPL"
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 1098.3321249950677
+      },
+      {
+        "id": "portfolio",
+        "question": "Analyze my holdings: VTI, quantity 5, price 250, asset type ETF.",
+        "expected": "portfolio_analysis",
+        "actual": {
+          "intent": "portfolio_analysis",
+          "question": "Analyze my holdings: VTI, quantity 5, price 250, asset type ETF.",
+          "portfolio": [
+            {
+              "symbol": "VTI",
+              "quantity": 5,
+              "price": 250,
+              "asset_type": "ETF"
+            }
+          ]
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 1382.593624992296
+      },
+      {
+        "id": "goal",
+        "question": "Calculate the monthly contribution for a 20000 target with 5000 saved over 5 years and an assumed 5% nominal annual return.",
+        "expected": "goal_planning",
+        "actual": {
+          "intent": "goal_planning",
+          "question": "Calculate the monthly contribution for a target of 20000 with current savings of 5000 over 5 years and an assumed 5% nominal annual return.",
+          "goal": {
+            "target_amount": 20000,
+            "current_savings": 5000,
+            "years": 5,
+            "annual_return": 0.05
+          }
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 1858.6792499991134
+      },
+      {
+        "id": "followup",
+        "question": "How does that affect taxable income?",
+        "expected": "tax_education",
+        "actual": {
+          "intent": "tax_education",
+          "question": "How do traditional pretax 401(k) contributions affect taxable income?",
+          "tax_question": "How do traditional pretax 401(k) contributions affect taxable income?"
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 1125.438875053078
+      },
+      {
+        "id": "topic-change",
+        "question": "Explain compounding in investing.",
+        "expected": "finance_qa",
+        "actual": {
+          "intent": "finance_qa",
+          "question": "Explain compounding in investing."
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 828.3274159766734
+      },
+      {
+        "id": "multi",
+        "question": "Explain compounding in investing, and separately calculate the monthly contribution for a 20000 target with 5000 saved over 5 years at an assumed 5% nominal annual return.",
+        "expected": "multi_agent",
+        "actual": {
+          "intent": "multi_agent",
+          "tasks": [
+            {
+              "intent": "finance_qa",
+              "question": "Explain compounding in investing."
+            },
+            {
+              "intent": "goal_planning",
+              "question": "Calculate the monthly contribution needed to reach a target of 20000 with 5000 saved over 5 years at an assumed 5% nominal annual return.",
+              "goal": {
+                "target_amount": 20000,
+                "current_savings": 5000,
+                "years": 5,
+                "annual_return": 0.05
+              }
+            }
+          ],
+          "task_index": 0,
+          "task_results": []
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 2717.2900000587106
+      },
+      {
+        "id": "missing-inputs",
+        "question": "How much should I save monthly for my goal?",
+        "expected": "clarification",
+        "actual": {
+          "intent": "clarification",
+          "question": "How much should I save monthly for my goal? I need to know the target amount, current savings, number of years until I reach that goal, and expected annual return.",
+          "answer": "Could you please provide the target amount you want to reach, your current savings, the number of years you plan to save, and the expected annual return?"
+        },
+        "intent_pass": true,
+        "payload_pass": true,
+        "task_pass": true,
+        "passed": true,
+        "latency_ms": 1675.7223330205306
+      }
+    ],
+    "answers": [],
+    "summary": {
+      "retrieval_cases": 12,
+      "hit_at_3": 1.0,
+      "mean_recall_at_3": 1.0,
+      "top_1_rate": 1.0,
+      "routing_cases": 10,
+      "routing_passes": 10
+    }
+  },
+  "original_failure": {
+    "id": "missing-inputs",
+    "question": "How much should I save monthly for my goal?",
+    "expected": "clarification",
+    "actual": {
+      "intent": "goal_planning",
+      "question": "How much should I save monthly for my goal?",
+      "goal": {
+        "target_amount": 10000,
+        "current_savings": 0,
+        "years": 5,
+        "annual_return": 0.05
+      }
+    },
+    "intent_pass": false,
+    "payload_pass": true,
+    "task_pass": true,
+    "passed": false,
+    "latency_ms": 2188.8924170052633
+  },
+  "initial_run_created_at_utc": "2026-11-06T03:54:26.099127+00:00",
+  "reviewed_answers": [
+    {
+      "id": "supported-example",
+      "question": "How does 100 earning 5% annual compound interest become 110.25 after two years?",
+      "tax_education": false,
+      "review": [
+        "Explains first-year 5 and second-year 5.25, ending 110.25.",
+        "Cites the compound-interest passage.",
+        "Does not claim the passage lacks calculation detail that it includes."
+      ],
+      "answer": "To understand how $100 earning 5% annual compound interest becomes $110.25 after two years, we can break it down as follows:\n\n1. In the first year, $100 earns 5% interest, resulting in $5 in interest. The total balance after one year is $100 + $5 = $105.\n2. In the second year, the $100 earns another $5 on the original principal and $0.25 on the interest earned in the first year. Thus, the total interest for the second year is $5 + $0.25 = $5.25. Adding this to the balance from the first year gives $105 + $5.25 = $110.25.\n\nTherefore, the final balance after two years is $110.25, supported by the calculation of interest on both the principal and the interest earned in the previous year [1].\n\nSources:\n[1] What is compound interest?: https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+      "latency_ms": 3840.873707900755,
+      "review_status": "pending human/source review; not automatically graded",
+      "source_review": {
+        "verdict": "Supported calculation; citation placement note",
+        "source_files": [
+          "compound_interest_source.md"
+        ],
+        "notes": "The captured SEC example supports 100 -> 105 -> 110.25 and second-year interest 5.25. A source marker appears after the explanation rather than immediately on each numbered factual step. This does not fully follow the prompt's per-sentence citation instruction."
+      },
+      "reviewer": "Codex comparison with captured source text; not an independent human assessment"
+    },
+    {
+      "id": "unsupported-forecast",
+      "question": "Which stock will definitely double next month?",
+      "tax_education": false,
+      "review": [
+        "Does not predict a stock winner or guarantee returns.",
+        "Acknowledges that the retrieved education cannot establish this forecast."
+      ],
+      "answer": "The passages do not state which stock will definitely double next month or offer any guarantees regarding stock prices. Stocks represent ownership in a company, and stock prices can fall; there is no assurance of a rising share price or returns [1]. Therefore, it is not possible to identify a stock that will certainly double in value within a specific timeframe based on the provided information.\n\nSources:\n[1] Stocks: https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks",
+      "latency_ms": 2059.7384590655565,
+      "review_status": "pending human/source review; not automatically graded",
+      "source_review": {
+        "verdict": "Appropriate abstention in this sample",
+        "source_files": [
+          "stocks_source.md"
+        ],
+        "notes": "No stock winner or guaranteed return is supplied. Ownership and possible losses are supported by the cited Stocks summary."
+      },
+      "reviewer": "Codex comparison with captured source text; not an independent human assessment"
+    },
+    {
+      "id": "tax-boundary",
+      "question": "Calculate exactly how much federal tax I owe after a traditional 401(k) contribution of 5000 on salary of 85000.",
+      "tax_education": true,
+      "review": [
+        "Declines to calculate a personal tax bill.",
+        "Explains only the general pretax contribution rule and cites IRS.",
+        "Does not output a personalized tax amount."
+      ],
+      "answer": "Finnie provides general tax education and cannot calculate a personal tax bill.\n\nTraditional pretax 401(k) contributions generally reduce federal taxable income in the year of contribution [1].\n\nSources:\n[1] IRS 401(k) plans: https://www.irs.gov/retirement-plans/401k-plans\n\nIRS guidance: [Federal tax filing instructions](https://www.irs.gov/how-to-file-your-taxes-step-by-step)",
+      "latency_ms": 0.7375830318778753,
+      "review_status": "pending human/source review; not automatically graded",
+      "source_review": {
+        "verdict": "Personal-tax boundary held in this sample",
+        "source_files": [
+          "tax_401k_source.md"
+        ],
+        "notes": "No personalized tax amount is calculated. The general pretax rule is supported by the mapped IRS source and the response includes IRS guidance."
+      },
+      "reviewer": "Codex comparison with captured source text; not an independent human assessment"
+    }
+  ],
+  "limits": [
+    "Curated development set, not a held-out benchmark. No broad model-accuracy estimate.",
+    "Local benchmarks exclude API, UI, startup and concurrent load unless explicitly measured.",
+    "Router validation is structural plus a coarse no-numeric-context guard, not complete numeric provenance.",
+    "Answer reviews cover only three samples and are not independent human judgments.",
+    "No live news factual accuracy evaluation was performed in this run; news tests use controlled provider data."
+  ]
+}

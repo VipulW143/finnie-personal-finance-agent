@@ -1,0 +1,184 @@
+[
+  {
+    "term": "Annual percentage rate (APR)",
+    "definition": "The yearly percentage rate used to express a credit card's borrowing interest rate.",
+    "topic": "Credit: annual percentage rate",
+    "source_url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-card-interest-rate-what-does-apr-mean-en-44/",
+    "source_title": "Credit Card Interest Rates and APR"
+  },
+  {
+    "term": "Asset allocation",
+    "definition": "Dividing investments among asset classes such as stocks, bonds, and cash.",
+    "topic": "Investing: asset allocation and rebalancing",
+    "source_url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation",
+    "source_title": "Asset Allocation"
+  },
+  {
+    "term": "Bond",
+    "definition": "A loan to an issuer that promises interest and repayment under specified terms; the payments carry issuer risk.",
+    "topic": "Investing: bonds",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds",
+    "source_title": "Bonds"
+  },
+  {
+    "term": "Certificate of deposit (CD)",
+    "definition": "A deposit held for an agreed term under specified interest and withdrawal conditions.",
+    "topic": "Saving: certificates of deposit",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/certificates-deposit-cds",
+    "source_title": "Certificates of Deposit (CDs)"
+  },
+  {
+    "term": "Common stock",
+    "definition": "An ownership interest in a company that usually includes voting rights.",
+    "topic": "Investing: stocks",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks",
+    "source_title": "Stocks"
+  },
+  {
+    "term": "Compound interest",
+    "definition": "Interest earned on both the original principal and previously earned interest.",
+    "topic": "Investing: compound interest",
+    "source_url": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+    "source_title": "What is compound interest?"
+  },
+  {
+    "term": "Credit report",
+    "definition": "A record of credit activity, payment history, and credit-account status.",
+    "topic": "Credit: reports and scoring",
+    "source_url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-credit-report-and-a-credit-score-en-2069/",
+    "source_title": "Credit Reports vs. Credit Scores"
+  },
+  {
+    "term": "Credit score",
+    "definition": "A number calculated from credit-report information using a scoring model; different models can give different scores.",
+    "topic": "Credit: reports and scoring",
+    "source_url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-credit-report-and-a-credit-score-en-2069/",
+    "source_title": "Credit Reports vs. Credit Scores"
+  },
+  {
+    "term": "Diversification",
+    "definition": "Spreading money among different investments to reduce concentration; it does not guarantee against losses.",
+    "topic": "Investing: diversification",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/diversify-your-investments",
+    "source_title": "Diversify Your Investments"
+  },
+  {
+    "term": "Emergency fund",
+    "definition": "Cash reserved for unplanned expenses or financial emergencies, separate from routine spending.",
+    "topic": "Saving: emergency funds",
+    "source_url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+    "source_title": "An essential guide to building an emergency fund"
+  },
+  {
+    "term": "Exchange-traded fund (ETF)",
+    "definition": "A pooled investment whose shares are bought and sold on an exchange at market prices during the trading day.",
+    "topic": "Investing: mutual funds and ETFs",
+    "source_url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/characteristics-mutual-funds-exchange-traded-funds",
+    "source_title": "Characteristics of Mutual Funds and Exchange-Traded Funds (ETFs)"
+  },
+  {
+    "term": "Expense ratio",
+    "definition": "A fund's annual operating expenses expressed as a percentage of its assets.",
+    "topic": "Investing: fund fees",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/mutual-fund-fees-and-expenses",
+    "source_title": "Mutual Fund and ETF Fees and Expenses"
+  },
+  {
+    "term": "Grace period",
+    "definition": "The time from a credit-card billing-cycle close to the payment due date, during which qualifying purchases may avoid interest if conditions are met.",
+    "topic": "Credit: billing and grace periods",
+    "source_url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-grace-period-for-a-credit-card-en-47/",
+    "source_title": "Credit Card Grace Periods"
+  },
+  {
+    "term": "High-yield bond",
+    "definition": "A lower-rated bond offering higher interest to compensate for greater default risk.",
+    "topic": "Investing: high-yield debt",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/high",
+    "source_title": "High-Yield Bonds"
+  },
+  {
+    "term": "Index fund",
+    "definition": "A mutual fund or ETF that seeks to track a specified market index.",
+    "topic": "Investing: index funds",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4",
+    "source_title": "Index Funds"
+  },
+  {
+    "term": "Limit order",
+    "definition": "An order to buy at a specified price or lower, or sell at a specified price or higher.",
+    "topic": "Investing: trading orders",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+    "source_title": "Types of Orders"
+  },
+  {
+    "term": "Margin account",
+    "definition": "A brokerage account permitting loans secured by portfolio holdings; borrowing adds interest costs and liquidation risk.",
+    "topic": "Investing: cash and margin accounts",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-brokerage-accounts",
+    "source_title": "Types of Brokerage Accounts"
+  },
+  {
+    "term": "Market order",
+    "definition": "An order seeking immediate execution without guaranteeing the execution price.",
+    "topic": "Investing: trading orders",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+    "source_title": "Types of Orders"
+  },
+  {
+    "term": "Mutual fund",
+    "definition": "An investment that pools investors' money; shares generally transact at the next calculated net asset value.",
+    "topic": "Investing: mutual funds and ETFs",
+    "source_url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/characteristics-mutual-funds-exchange-traded-funds",
+    "source_title": "Characteristics of Mutual Funds and Exchange-Traded Funds (ETFs)"
+  },
+  {
+    "term": "REIT",
+    "definition": "A real estate investment trust that owns or operates income-producing real estate or related assets.",
+    "topic": "Investing: real estate",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits",
+    "source_title": "Real Estate Investment Trusts (REITs)"
+  },
+  {
+    "term": "Rebalancing",
+    "definition": "Adjusting investments back toward an intended asset mix after the allocation has changed.",
+    "topic": "Investing: asset allocation and rebalancing",
+    "source_url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation",
+    "source_title": "Asset Allocation"
+  },
+  {
+    "term": "Roth IRA",
+    "definition": "An individual retirement account with nondeductible contributions and tax-free qualified distributions when requirements are met.",
+    "topic": "Tax education: Roth IRA contributions and distributions",
+    "source_url": "https://www.irs.gov/retirement-plans/roth-iras",
+    "source_title": "IRS Roth IRAs"
+  },
+  {
+    "term": "Target-date fund",
+    "definition": "A fund that adjusts its investment mix over time with reference to a target year, often an expected retirement year.",
+    "topic": "Investing: retirement target-date funds",
+    "source_url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/target-date-funds-investor-bulletin",
+    "source_title": "Target Date Funds — Investor Bulletin"
+  },
+  {
+    "term": "Time horizon",
+    "definition": "The length of time available before money is needed for a particular financial goal.",
+    "topic": "Planning: financial goals",
+    "source_url": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/define-your-goals",
+    "source_title": "Define Your Goals"
+  },
+  {
+    "term": "TIPS",
+    "definition": "Treasury Inflation-Protected Securities whose principal adjusts with inflation and deflation and has an original-principal floor at maturity.",
+    "topic": "Investing: inflation-protected securities",
+    "source_url": "https://www.treasurydirect.gov/marketable-securities/tips/",
+    "source_title": "Treasury Inflation-Protected Securities (TIPS)"
+  },
+  {
+    "term": "Traditional IRA",
+    "definition": "An individual retirement account whose contributions may be deductible under applicable rules and whose distributions are generally taxable.",
+    "topic": "Tax education: traditional IRA contributions and distributions",
+    "source_url": "https://www.irs.gov/retirement-plans/traditional-iras",
+    "source_title": "IRS Traditional IRAs"
+  }
+]

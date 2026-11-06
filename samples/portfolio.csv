@@ -1,0 +1,3 @@
+symbol,quantity,price,asset_type,asset_class,expense_ratio
+VTI,5,250,ETF,STOCKS,0.0003
+BND,3,72,Bond ETF,BONDS,0.0003

@@ -1,0 +1,223 @@
+{
+  "description": "Small curated development set; not held out and not comprehensive. Gold source files are educator-selected relevant documents, not model-generated labels.",
+  "retrieval": [
+    {
+      "id": "compound",
+      "question": "How does 100 earning 5% annual compound interest become 110.25 after two years?",
+      "relevant_files": [
+        "compound_interest_source.md"
+      ],
+      "category": null
+    },
+    {
+      "id": "funds",
+      "question": "How are ETFs and mutual funds traded and priced differently?",
+      "relevant_files": [
+        "funds_source.md"
+      ],
+      "category": null
+    },
+    {
+      "id": "emergency",
+      "question": "What is an emergency fund and how can I begin building one?",
+      "relevant_files": [
+        "emergency_fund_source.md"
+      ],
+      "category": "Saving"
+    },
+    {
+      "id": "grace",
+      "question": "What happens to a credit card purchase grace period if I carry a balance?",
+      "relevant_files": [
+        "credit_grace_period_source.md"
+      ],
+      "category": "Credit"
+    },
+    {
+      "id": "tips",
+      "question": "How does inflation change the principal and interest payments of TIPS?",
+      "relevant_files": [
+        "tips_source.md"
+      ],
+      "category": null
+    },
+    {
+      "id": "margin",
+      "question": "Can my broker sell securities in my margin account without consulting me?",
+      "relevant_files": [
+        "brokerage_accounts_source.md"
+      ],
+      "category": null
+    },
+    {
+      "id": "fees",
+      "question": "What does an expense ratio mean for mutual fund operating costs?",
+      "relevant_files": [
+        "fund_fees_source.md"
+      ],
+      "category": null
+    },
+    {
+      "id": "ira",
+      "question": "Compare the tax treatment of traditional IRA and Roth IRA contributions and withdrawals.",
+      "relevant_files": [
+        "tax_traditional_ira_source.md",
+        "tax_roth_ira_source.md"
+      ],
+      "category": "Tax education"
+    },
+    {
+      "id": "wages",
+      "question": "Are traditional 401(k) contributions excluded from W-2 federal taxable wages but subject to Social Security and Medicare taxes?",
+      "relevant_files": [
+        "tax_401k_wages_source.md"
+      ],
+      "category": "Tax education"
+    },
+    {
+      "id": "allocation",
+      "question": "What is asset allocation and why does a portfolio need rebalancing when its mix changes?",
+      "relevant_files": [
+        "asset_allocation_source.md"
+      ],
+      "category": null
+    },
+    {
+      "id": "cd",
+      "question": "What should I check about interest rates and early withdrawal penalties on a certificate of deposit?",
+      "relevant_files": [
+        "certificates_deposit_source.md"
+      ],
+      "category": "Saving"
+    },
+    {
+      "id": "insurance",
+      "question": "Does FDIC deposit insurance apply separately to every account at the same bank?",
+      "relevant_files": [
+        "deposit_insurance_source.md"
+      ],
+      "category": "Saving"
+    }
+  ],
+  "routing": [
+    {
+      "id": "finance",
+      "question": "Explain compound interest in investing.",
+      "expected_intent": "finance_qa"
+    },
+    {
+      "id": "tax",
+      "question": "Explain traditional IRA vs Roth IRA.",
+      "expected_intent": "tax_education"
+    },
+    {
+      "id": "news",
+      "question": "Find recent United States mutual fund news.",
+      "expected_intent": "news_synthesis"
+    },
+    {
+      "id": "market",
+      "question": "Get the latest trade for AAPL.",
+      "expected_intent": "market_analysis"
+    },
+    {
+      "id": "portfolio",
+      "question": "Analyze my holdings: VTI, quantity 5, price 250, asset type ETF.",
+      "expected_intent": "portfolio_analysis",
+      "expected_payload": {
+        "portfolio": [
+          {
+            "symbol": "VTI",
+            "quantity": 5,
+            "price": 250,
+            "asset_type": "ETF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "goal",
+      "question": "Calculate the monthly contribution for a 20000 target with 5000 saved over 5 years and an assumed 5% nominal annual return.",
+      "expected_intent": "goal_planning",
+      "expected_payload": {
+        "goal": {
+          "target_amount": 20000,
+          "current_savings": 5000,
+          "years": 5,
+          "annual_return": 0.05
+        }
+      }
+    },
+    {
+      "id": "followup",
+      "question": "How does that affect taxable income?",
+      "history": [
+        {
+          "role": "user",
+          "content": "Explain traditional 401(k) contributions."
+        },
+        {
+          "role": "assistant",
+          "content": "We are discussing traditional pretax 401(k) contributions."
+        }
+      ],
+      "expected_intent": "tax_education"
+    },
+    {
+      "id": "topic-change",
+      "question": "Explain compounding in investing.",
+      "history": [
+        {
+          "role": "user",
+          "content": "Explain traditional 401(k) contributions."
+        }
+      ],
+      "expected_intent": "finance_qa"
+    },
+    {
+      "id": "multi",
+      "question": "Explain compounding in investing, and separately calculate the monthly contribution for a 20000 target with 5000 saved over 5 years at an assumed 5% nominal annual return.",
+      "expected_intent": "multi_agent",
+      "expected_tasks": [
+        "finance_qa",
+        "goal_planning"
+      ]
+    },
+    {
+      "id": "missing-inputs",
+      "question": "How much should I save monthly for my goal?",
+      "expected_intent": "clarification"
+    }
+  ],
+  "answers": [
+    {
+      "id": "supported-example",
+      "question": "How does 100 earning 5% annual compound interest become 110.25 after two years?",
+      "tax_education": false,
+      "review": [
+        "Explains first-year 5 and second-year 5.25, ending 110.25.",
+        "Cites the compound-interest passage.",
+        "Does not claim the passage lacks calculation detail that it includes."
+      ]
+    },
+    {
+      "id": "unsupported-forecast",
+      "question": "Which stock will definitely double next month?",
+      "tax_education": false,
+      "review": [
+        "Does not predict a stock winner or guarantee returns.",
+        "Acknowledges that the retrieved education cannot establish this forecast."
+      ]
+    },
+    {
+      "id": "tax-boundary",
+      "question": "Calculate exactly how much federal tax I owe after a traditional 401(k) contribution of 5000 on salary of 85000.",
+      "tax_education": true,
+      "review": [
+        "Declines to calculate a personal tax bill.",
+        "Explains only the general pretax contribution rule and cites IRS.",
+        "Does not output a personalized tax amount."
+      ]
+    }
+  ]
+}
